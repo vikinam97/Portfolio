@@ -1,0 +1,35 @@
+.header {
+    min-height: calc(100vh - 20px);
+    min-width: 100vw;
+    background-color: lightgrey;
+}
+
+.header > canvas {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: #000000b8;
+}
+
+.header > .header__content {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    place-items: center;
+    color: #ffffff9e;
+}
+
+.header__text  span {
+    color: white;
+    font-size: 3em;
+}
+
+@media (max-width: 900px) {
+    .header__content {
+        flex-direction: column;
+    }
+} 

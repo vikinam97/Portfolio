@@ -1,0 +1,103 @@
+.details {
+    margin-top: -4px;
+    background-color: lightgrey;
+}
+
+.details .details__header {
+    height: 50px;
+    background: #000000e3;
+    width: 100%;
+    color: #ffffffa6;
+    font-size: 30px;
+    display: flex;
+    padding-left: 10px;
+    place-items: center;
+}
+
+.details .details__skillSet {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+    padding: 15px;
+}
+
+.details__skill {
+    height: 80px;
+    margin: 7px 0px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    background-color: white;
+    place-items: center;
+    box-shadow: 0px 0px 3px 0px darkgrey;
+}
+
+.details__skill:hover {
+    box-shadow: 0px 0px 7px 0px black;
+}
+
+.details__skillIcon {
+    flex: 0.25;
+    display: flex;
+    justify-content: center;
+}
+
+.details__skillIcon > img {
+    height: 60px;
+    object-fit: contain;
+}
+
+.details__skillPoints {
+    flex: 0.75;
+}
+
+.progressContainer {
+    height: 15px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.progressContainer > div {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #0000ff91;
+}
+
+.progressContainer .progress100 {
+    width: 100%;
+}
+
+.progressContainer .progress80 {
+    width: 80%;
+}
+
+.progressContainer .progress60 {
+    width: 60%;
+}
+
+.progressContainer .progress40 {
+    width: 40%;
+}
+
+@media (min-width: 900px) {
+    .details__skill {
+        width: 48%;
+    }
+}
+
+@media (max-width: 900px) {
+    .details {
+        margin-top: -36px;
+    }
+
+    .details__skillSet {
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .details__header {
+        justify-content: center;
+    }
+}
